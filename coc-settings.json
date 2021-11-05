@@ -1,10 +1,12 @@
+
 {
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdow",
     "javascript",
     "html",
-    "json"
+    "json",
+    "python"
   ],
   "prettier.disableLanguages": ["c", "cpp", "objc"],
   "prettier.jsxSingleQuote": true,
