@@ -21,4 +21,4 @@
 
 ## Show your support
 
-# Give a ⭐️ if this project helped you!
+Give a ⭐️ if this project helped you!
