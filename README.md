@@ -1,4 +1,15 @@
-<h1 align="center">Welcome to Config files for neovim, oh-my-posh, coc etc 👋</h1>
+<h1 align="center">Welcome to Config👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/powrhouseofthecell/configs#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/powrhouseofthecell/configs/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+</p>
+
+> These are the config files for neovim, vim, coc, omp...
 
 ## Author
 
