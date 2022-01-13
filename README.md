@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 <h1 align="center">Welcome to Config files for neovim, oh-my-posh, coc etc 👋</h1>
-<p>
-</p>
 
 ## Author
 
@@ -13,7 +10,4 @@
 
 ## Show your support
 
-Give a ⭐️ if this project helped you!
-=======
-# Config files for vim, windows terminal (powershell)
->>>>>>> 3f41de897755bcf6e83e9c37223dbfc1814fa04f
+# Give a ⭐️ if this project helped you!
