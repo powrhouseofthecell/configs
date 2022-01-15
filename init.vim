@@ -3,7 +3,7 @@ call plug#begin('C:/Users/Zuhaib/AppData/Local/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'bryanmylee/vim-colorscheme-icons'
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'sainnhe/gruvbox-material'
 Plug 'junegunn/goyo.vim'
 Plug 'mhinz/vim-startify'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -16,9 +16,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-
-
-
+Plug 'pacha/vem-tabline'
 
 " Functionalities
 Plug 'tpope/vim-fugitive'
@@ -47,13 +45,25 @@ Plug 'metakirby5/codi.vim'
 Plug 'dkarter/bullets.vim'
 Plug 'psliwka/vim-smoothie'
 Plug 'antoinemadec/FixCursorHold.nvim'
-Plug 'wellle/context.vim'
+" Plug 'wellle/context.vim'
 
 " Initialize plugin system
 
 call plug#end()
 
-                       
+" AutoReload
+" trigger `autoread` when files changes on disk
+set autoread
+autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
+" notification after file change
+autocmd FileChangedShellPost *
+\ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
+
+"Gruvbox
+
+let g:gruvbox_material_enable_italic = 1
+let g:gruvbox_material_transparent_background = 1
+colorscheme gruvbox-material
 
 
 " ctrlp
@@ -63,12 +73,13 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
-set relativenumber
+" set relativenumber
 
 set smarttab
 set cindent
 set tabstop=2
 set shiftwidth=2
+set textwidth=80
 
 " coc config
 let g:coc_global_extensions = [
@@ -76,8 +87,10 @@ let g:coc_global_extensions = [
   \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-eslint', 
-  \ 'coc-prettier', 
-  \ 'coc-json', 
+  \ 'coc-prettier',
+  \ 'coc-json',
+  \ 'coc-pyright',
+  \ 'coc-emmet',
   \ ]
 " from readme
 " if hidden is not set, TextEdit might fail.
@@ -204,6 +217,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 let g:loaded_ruby_provider = 0
 let g:python3_host_prog = '~/AppData/Local/Programs/Python/Python310/python'
 
+
 " Adding keymaps from another config
 """ Main Configurations
 filetype plugin indent on
@@ -240,8 +254,8 @@ augroup MyColors
 augroup END
 
 " Main Coloring Configurations
-syntax on
-color dracula
+" syntax on
+" color dracula
 
 " Enable True Color Support (ensure you're using a 256-color enabled $TERM, e.g. xterm-256color)
 set termguicolors
@@ -391,7 +405,7 @@ endfunction
 
 let mapleader=","
 nmap <leader>$s <C-w>s<C-w>j:terminal<CR>:set nonumber<CR><S-a>
-nmap <leader>$v <C-w>v<C-w>l:terminal<CR>:set nonumber<CR><S-a>
+nmap <leader>$v <C-w>v<C-w>l:terminal Powershell<CR>:set nonumber<CR><S-a>
 nmap <leader>q :NERDTreeToggle<CR>
 nmap \\ <leader>q
 nmap <leader>w :TagbarToggle<CR>
@@ -402,7 +416,7 @@ nmap <leader>e1 :call ColorDracula()<CR>
 nmap <leader>e2 :call ColorSeoul256()<CR>
 nmap <leader>e3 :call ColorForgotten()<CR>
 nmap <leader>e4 :call ColorZazen()<CR>
-nmap <leader>r :so ~/.config/nvim/init.vim<CR>
+nmap <leader>r :so ~/AppData/Local/nvim/init.vim<CR>
 nmap <leader>t :call TrimWhitespace()<CR>
 nmap <leader>y <C-w>v<C-w>l:HackerNews best<CR>J
 nmap <leader>p <Plug>(pydocstring)
