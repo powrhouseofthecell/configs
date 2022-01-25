@@ -408,7 +408,7 @@ let mapleader=","
 nmap <leader>$s <C-w>s<C-w>j:terminal<CR>:set nonumber<CR><S-a>
 nmap <leader>$v <C-w>v<C-w>l:terminal Powershell<CR>:set nonumber<CR><S-a>
 nmap <leader>q :NERDTreeToggle<CR>
-"""""""""""" DON'T WANT TO USE vim-surround BELOW ARE THE MAPPING
+""""""""""""" DON'T WANT TO USE vim-surround BELOW ARE THE MAPPING
 """"Add quotes
 """"nmap <Leader>ysiw" ciw""<Esc>P
 """"nmap <Leader>ysiw' ciw''<Esc>P
