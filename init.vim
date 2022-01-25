@@ -82,7 +82,7 @@ set tabstop=2
 set shiftwidth=2
 set textwidth=80
 
-" coc config
+" coc configuration
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
