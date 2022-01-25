@@ -59,12 +59,6 @@ autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checkti
 autocmd FileChangedShellPost *
 \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 
-"Gruvbox
-
-let g:gruvbox_material_enable_italic = 1
-let g:gruvbox_material_transparent_background = 1
-colorscheme gruvbox-material
-
 
 " ctrlp
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
@@ -72,6 +66,13 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 " j/k will move virtual lines (lines that wrap)
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+
+hi Normal guibg=NONE ctermbg=NONE
+
+"Gruvbox
+let g:gruvbox_material_enable_italic = 1
+let g:gruvbox_material_transparent_background = 1
+colorscheme gruvbox-material
 
 " set relativenumber
 
@@ -407,6 +408,16 @@ let mapleader=","
 nmap <leader>$s <C-w>s<C-w>j:terminal<CR>:set nonumber<CR><S-a>
 nmap <leader>$v <C-w>v<C-w>l:terminal Powershell<CR>:set nonumber<CR><S-a>
 nmap <leader>q :NERDTreeToggle<CR>
+"""""""""""" DON'T WANT TO USE vim-surround BELOW ARE THE MAPPING
+""""Add quotes
+""""nmap <Leader>ysiw" ciw""<Esc>P
+""""nmap <Leader>ysiw' ciw''<Esc>P
+""""Remove quotes
+""""nmap <Leader>ds" di'hPl2x
+""""nmap <Leader>ds' di"hPl2x
+""""Change from one to the other
+""""nmap <Leader>cs'" va':s/\%V'\%V/"/g
+""""nmap <Leader>cs"' va':s/\%V"\%V/'/g
 nmap \\ <leader>q
 nmap <leader>w :TagbarToggle<CR>
 nmap \| <leader>w
