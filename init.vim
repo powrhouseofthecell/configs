@@ -418,6 +418,9 @@ nmap <leader>q :NERDTreeToggle<CR>
 """"Change from one to the other
 """"nmap <Leader>cs'" va':s/\%V'\%V/"/g
 """"nmap <Leader>cs"' va':s/\%V"\%V/'/g
+nmap <Leader>$w yiw
+nmap <Leader>$p viwp
+
 nmap \\ <leader>q
 nmap <leader>w :TagbarToggle<CR>
 nmap \| <leader>w
