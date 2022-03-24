@@ -1,51 +1,51 @@
 {
-   "coc.preferences.formatOnSaveFiletypes": [
-      "css",
-      "markdow",
-      "javascript",
-      "html",
-      "json",
-      "python"
-   ],
-   "prettier.disableLanguages": ["c", "cpp", "objc"],
-   "prettier.singleQuote": true,
-   "prettier.jsxSingleQuote": true,
-   "prettier.arrowParens": "avoid",
-   "prettier.tabWidth": 3,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdow",
+    "javascript",
+    "html",
+    "json",
+    "python"
+  ],
+  "prettier.disableLanguages": ["c", "cpp", "objc"],
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.tabWidth": 3,
 
-   "explorer.width": 30,
-   "explorer.file.reveal.auto": true,
-   "explorer.icon.enableNerdfont": true,
-   "explorer.icon.source": "vim-devicons",
-   "explorer.file.child.template": "[git | 2] [selection | clip | 1] [indent][icon | 1] [diagnosticError & 1][filename omitCenter 1][modified][readonly] [linkIcon & 1][link growRight 1 omitCenter 5]",
-   "explorer.buffer.root.template": "[icon & 1] OPEN EDITORS",
-   "explorer.file.root.template": "[icon & 1] [root]",
-   "explorer.keyMappings.global": {
-      "v": "open:vsplit"
-   },
+  "explorer.width": 30,
+  "explorer.file.reveal.auto": true,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.icon.source": "vim-devicons",
+  "explorer.file.child.template": "[git | 2] [selection | clip | 1] [indent][icon | 1] [diagnosticError & 1][filename omitCenter 1][modified][readonly] [linkIcon & 1][link growRight 1 omitCenter 5]",
+  "explorer.buffer.root.template": "[icon & 1] OPEN EDITORS",
+  "explorer.file.root.template": "[icon & 1] [root]",
+  "explorer.keyMappings.global": {
+    "v": "open:vsplit"
+  },
 
-   "emmet.showAbbreviationSuggestions": true,
-   "emmet.showExpandedAbbreviation": "always",
-   "emmet.excludeLanguages": ["markdown", "c", "cpp", "javascript"],
-   "emmet.includeLanguages": {
-      "javascript": "javascriptreact"
-   },
-   "html.autoClosingTags": true,
+  "emmet.showAbbreviationSuggestions": true,
+  "emmet.showExpandedAbbreviation": "always",
+  "emmet.excludeLanguages": ["markdown", "c", "cpp", "javascript"],
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "html.autoClosingTags": true,
 
-   "coc.preferences.extensionUpdateCheck": "daily",
-   "coc.source.around.firstMatch": false,
-   "coc.source.file.ignoreHidden": false,
+  "coc.preferences.extensionUpdateCheck": "daily",
+  "coc.source.around.firstMatch": false,
+  "coc.source.file.ignoreHidden": false,
 
-   "diagnostic-languageserver.debug": true,
-   "diagnostic.errorSign": "",
-   "diagnostic.warningSign": "",
-   "diagnostic.infoSign": "",
-   "diagnostic.hintSign": "",
-   "diagnostic.format": "%message",
-   "diagnostic.virtualText": false,
-   "diagnostic.checkCurrentLine": true,
+  "diagnostic-languageserver.debug": true,
+  "diagnostic.errorSign": "",
+  "diagnostic.warningSign": "",
+  "diagnostic.hintSign": "",
+  "diagnostic.infoSign": "",
+  "diagnostic.format": "%message",
+  "diagnostic.virtualText": false,
+  "diagnostic.checkCurrentLine": true,
 
-   "signature.target": "echo",
-   "suggest.timeout": 5000,
-   "suggest.asciiCharactersOnly": true
+  "signature.target": "echo",
+  "suggest.timeout": 5000,
+  "suggest.asciiCharactersOnly": true
 }

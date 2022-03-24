@@ -132,7 +132,7 @@ nnoremap <leader>v `[V`]
 nnoremap <C-H> :%s/
 xnoremap <C-H> :s/
 
-" Edit and reload init.vim quickly
+" Edit and Reload init.vim quickly
 nnoremap <silent> <leader>ev :edit $MYVIMRC<cr>
 nnoremap <silent> <leader>sv :silent update $MYVIMRC <bar> source $MYVIMRC <bar>
     \ echomsg "Reloaded init.vim."<cr>

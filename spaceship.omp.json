@@ -54,8 +54,8 @@
           "style": "plain",
           "foreground": "lightGreen",
           "properties": {
-            "prefix": "",
             "text": "🚀",
+            "prefix": "",
             "postfix": ""
           }
         }

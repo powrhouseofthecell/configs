@@ -1,7 +1,7 @@
 <h1 align="center">Config ⚡</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/powrhouseofthecell/configs#readme" target="_blank">
+  <a href="https://github.com/powrhouseofthecell/configs#readme" target="_blank
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="https://github.com/powrhouseofthecell/configs/graphs/commit-activity" target="_blank">
@@ -9,15 +9,15 @@
   </a>
 </p>
 
-> These are the config files for neovim, vim, coc, omp...
+> Config files for a few things.
 
 ## Author
 
 👤 **Zuhaib**
 
--  Website: [zuhaib.live](https://zuhaib.live)
--  LinkedIn: [@zuhaibnazir](https://linkedin.com/in/zuhaibnazir)
--  Github: [@powrhouseofthecell](https://github.com/powrhouseofthecell)
+- Website: [zuhaib.live](https://zuhaib.live)
+- LinkedIn: [@zuhaibnazir](https://linkedin.com/in/zuhaibnazir)
+- Github: [@powrhouseofthecell](https://github.com/powrhouseofthecell)
 
 ## Show your support
 
