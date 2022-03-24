@@ -9,8 +9,9 @@
    ],
    "prettier.disableLanguages": ["c", "cpp", "objc"],
    "prettier.singleQuote": true,
-   //"prettier.jsxSingleQuote": true,
+   "prettier.jsxSingleQuote": true,
    "prettier.arrowParens": "avoid",
+   "prettier.tabWidth": 3,
 
    "explorer.width": 30,
    "explorer.file.reveal.auto": true,
