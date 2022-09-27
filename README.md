@@ -15,9 +15,9 @@
 
 👤 **Zuhaib**
 
-- Website: [zuhaib.live](https://zuhaib.live)
-- LinkedIn: [@zuhaibnazir](https://linkedin.com/in/zuhaibnazir)
-- Github: [@powrhouseofthecell](https://github.com/powrhouseofthecell)
+-  Website: [zuhaib.live](https://zuhaib.live)
+-  LinkedIn: [@zuhaibnazir](https://linkedin.com/in/zuhaibnazir)
+-  Github: [@powrhouseofthecell](https://github.com/powrhouseofthecell)
 
 ## Show your support
 
